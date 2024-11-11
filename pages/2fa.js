@@ -18,7 +18,7 @@ const TwoFactorAuth = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      if (userId !== null) {
+      if (userId == null) {
         // const response = await fetch(
         //   "https://authenticator-kappa.vercel.app/api/verifycode",
         //   {
